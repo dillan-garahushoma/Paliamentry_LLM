@@ -49,8 +49,6 @@ except ImportError:
 
 warnings.filterwarnings("ignore")
 
-
-# Configuration
 DATA_DIR = Path("data")
 CLEAN_CHUNKS_CSV = DATA_DIR / "cleaned_chunks.csv"
 LABELLED_SENTIMENT_CSV = DATA_DIR / "labelled_sentiment.csv"
@@ -66,7 +64,7 @@ MAX_SEQ_LEN = 256
 CHUNK_WORDS = 300
 CHUNK_OVERLAP = 50
 
-# Keep the assignment runnable on normal laptops. Set to None to train on all chunks.
+# To keep the assignment runnable on normal laptops
 MAX_SENTIMENT_EXAMPLES = 900
 BERT_EPOCHS = 1
 
